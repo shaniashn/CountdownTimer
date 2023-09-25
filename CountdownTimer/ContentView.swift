@@ -8,12 +8,23 @@
 import SwiftUI
 
 struct ContentView: View {
+   
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            
+            NavigationLink {
+                
+            } label: {
+                Text("+ Add new Event")
+                    .padding(20)
+                    .foregroundColor(.white)
+                    
+            }
+            .frame(maxWidth: .infinity)
+            .background(.primary)
+            .cornerRadius(10)
+            
+            
         }
         .padding()
     }
