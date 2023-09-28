@@ -8,25 +8,42 @@
 import SwiftUI
 
 struct ContentView: View {
-   
+    @FocusState var focusedText: Bool
+    
+    @ObservedObject var viewModel = CountDownViewModel()
+    
     var body: some View {
-        VStack {
-            
-            NavigationLink {
+        NavigationStack {
+            VStack {
+                VStack {
+                    NavigationLink {
+                        NewCountdownView(viewModel: viewModel, focusedText: _focusedText)
+                    } label: {
+                        Text("+ Add new Event")
+                            .padding(20)
+                            .foregroundColor(.white)
+                            
+                    }
+                    .frame(maxWidth: .infinity)
+                    .background(.primary)
+                    .cornerRadius(10)
+                }
+                .padding()
                 
-            } label: {
-                Text("+ Add new Event")
-                    .padding(20)
-                    .foregroundColor(.white)
-                    
+                Divider()
+                
+                ScrollView {
+                    VStack(spacing: 15){
+                        ForEach(viewModel.event) { ev in
+                            CountdownRow(viewModel: viewModel, titleEvent: ev.title, dateEvent: ev.date)
+                        }
+                    }
+                    .padding()
+                }
+                Spacer()
             }
-            .frame(maxWidth: .infinity)
-            .background(.primary)
-            .cornerRadius(10)
-            
-            
+            .navigationTitle("Active Countdown")
         }
-        .padding()
     }
 }
 

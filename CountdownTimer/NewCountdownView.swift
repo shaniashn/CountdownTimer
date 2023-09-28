@@ -8,8 +8,14 @@
 import SwiftUI
 
 struct NewCountdownView: View {
+    @ObservedObject var viewModel: CountDownViewModel
+    
+    @Environment(\.dismiss) var isPresented
+    
     @State var selectedDate: Date = Date()
     @State var eventTitle: String = ""
+    
+    
     @FocusState var focusedText: Bool
     
     var body: some View {
@@ -26,11 +32,13 @@ struct NewCountdownView: View {
                 Spacer()
             }
             .navigationTitle("New Countdown")
+            .navigationBarTitleDisplayMode(.inline)
             .padding()
             .toolbar {
                 ToolbarItem(placement: .confirmationAction){
                     Button("Save"){
-
+                        viewModel.addEvents(title: eventTitle, date: selectedDate)
+                        isPresented.callAsFunction()
                     }
                 }
             }
@@ -39,8 +47,8 @@ struct NewCountdownView: View {
     }
 }
 
-struct NewCountdownView_Previews: PreviewProvider {
-    static var previews: some View {
-        NewCountdownView()
-    }
-}
+//struct NewCountdownView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        NewCountdownView()
+//    }
+//}
