@@ -14,6 +14,7 @@
 		0077F1AE2AC00DEC00E85F69 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0077F1AD2AC00DEC00E85F69 /* ContentView.swift */; };
 		0077F1B02AC00DED00E85F69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0077F1AF2AC00DED00E85F69 /* Assets.xcassets */; };
 		0077F1B32AC00DED00E85F69 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0077F1B22AC00DED00E85F69 /* Preview Assets.xcassets */; };
+		00AE82C32AC578BA007DCA83 /* CountdownRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AE82C22AC578BA007DCA83 /* CountdownRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		0077F1AD2AC00DEC00E85F69 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0077F1AF2AC00DED00E85F69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0077F1B22AC00DED00E85F69 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		00AE82C22AC578BA007DCA83 /* CountdownRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			children = (
 				0077F1AB2AC00DEC00E85F69 /* CountdownTimerApp.swift */,
 				0077F1AD2AC00DEC00E85F69 /* ContentView.swift */,
+				00AE82C22AC578BA007DCA83 /* CountdownRow.swift */,
 				0063ABD12AC1CA41006B665A /* NewCountdownView.swift */,
 				0063ABD32AC1F888006B665A /* CountDownModel.swift */,
 				0063ABD52AC1F948006B665A /* CountDownViewModel.swift */,
@@ -150,6 +153,7 @@
 				0063ABD42AC1F888006B665A /* CountDownModel.swift in Sources */,
 				0063ABD62AC1F948006B665A /* CountDownViewModel.swift in Sources */,
 				0077F1AE2AC00DEC00E85F69 /* ContentView.swift in Sources */,
+				00AE82C32AC578BA007DCA83 /* CountdownRow.swift in Sources */,
 				0077F1AC2AC00DEC00E85F69 /* CountdownTimerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
