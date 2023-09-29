@@ -20,7 +20,7 @@ class CountDownViewModel: ObservableObject {
     }
     
     func getDate(date: Date) {
-        let date = Calendar.current.dateComponents([ .year, .month, .weekOfMonth, .weekOfYear, .day], from: date, to: Date())
+        let date = Calendar.current.dateComponents([ .year, .month, .weekOfMonth, .weekOfYear, .day], from: Date(), to: date)
         let year = date.year ?? 0
         var month = date.month ?? 0
         var weekOfMonth = date.weekOfMonth ?? 0
@@ -28,8 +28,8 @@ class CountDownViewModel: ObservableObject {
         var day = date.day ?? 0
         print(date)
         
-//        var formatter = DateFormatter()
-//        formatter.dateFormat = " "
+        var formatter = DateFormatter()
+        formatter.dateFormat = " "
         
     }
 
