@@ -35,7 +35,8 @@ struct ContentView: View {
                 ScrollView {
                     VStack(spacing: 15){
                         ForEach(viewModel.event) { ev in
-                            CountdownRow(viewModel: viewModel, titleEvent: ev.title, dateEvent: ev.date)
+//                            CountdownRow(viewModel: viewModel, titleEvent: ev.title, dateEvent: ev.date)
+                            CountdownRow(viewModel: viewModel, titleEvent: ev.title, dateEvent: ev.remaining)
                         }
                     }
                     .padding()

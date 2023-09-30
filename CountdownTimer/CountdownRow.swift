@@ -11,7 +11,11 @@ struct CountdownRow: View {
     @ObservedObject var viewModel: CountDownViewModel
     
     @State var titleEvent: String
-    @State var dateEvent: Date
+//    @State var dateEvent: DateComponents
+    @State var dateEvent: Int
+    
+    @State var timeRemains: String = ""
+//    @State var thedate
     
     var body: some View {
         HStack {
@@ -19,14 +23,14 @@ struct CountdownRow: View {
                 Text(titleEvent)
                     .font(.system(size: 20, weight: .medium))
                     .fontWeight(.semibold)
-//                Text(viewModel.getDate(date: dateEvent))
-//                    .foregroundColor(.secondary)
+                Text("\(dateEvent)")
+                    .foregroundColor(.secondary)
             }
-//            Spacer()
+            Spacer()
             Image(systemName: "chevron.forward")
                 .foregroundColor(.black)
             Button {
-                viewModel.getDate(date: dateEvent)
+                
             } label: {
                 Text("press date")
             }
@@ -42,6 +46,8 @@ struct CountdownRow: View {
     
     
 }
+
+
 
 //
 //struct CountdownRow_Previews: PreviewProvider {
