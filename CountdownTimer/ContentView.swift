@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     @FocusState var focusedText: Bool
     
-    @ObservedObject var viewModel = CountDownViewModel()
+    @StateObject var viewModel = CountDownViewModel()
     
     var body: some View {
         NavigationStack {
@@ -38,7 +38,9 @@ struct ContentView: View {
 //                            CountdownRow(viewModel: viewModel, titleEvent: ev.title, dateEvent: ev.date)
                             CountdownRow(viewModel: viewModel, titleEvent: ev.title, dateEvent: ev.remaining)
                         }
+                        .onDelete(perform: viewModel.deleteEvents(index:))
                     }
+                    
                     .padding()
                 }
                 Spacer()

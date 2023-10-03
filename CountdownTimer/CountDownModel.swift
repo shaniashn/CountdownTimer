@@ -12,7 +12,11 @@ struct TheEvents: Identifiable {
     var title: String
     var date: Date
 //    var remaining: DateComponents
-    var remaining: Int
+//    var remaining: TimesRemaining
+    var remaining: String
 }
 
-
+struct TimesRemaining {
+    var day: Int
+    var month: Int
+}
