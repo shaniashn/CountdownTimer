@@ -45,12 +45,17 @@ class CountDownViewModel: ObservableObject {
     }
 
     func getDatePerComponents(date: Date) -> [Int] {
-        let date = Calendar.current.dateComponents([ .year, .month, .day], from: Date(), to: date)
+        let date = Calendar.current.dateComponents([ .year, .month, .day, .hour], from: Date(), to: date)
         var finalDate: [Int] = []
         
+        let hour = date.hour ?? 0
         let day = date.day ?? 0
         let month = date.month ?? 0
         let year = date.year ?? 0
+        
+        if hour != 0 {
+            finalDate.append(hour)
+        }
         
         if day != 0 {
             finalDate.append(day)
