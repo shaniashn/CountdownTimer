@@ -38,7 +38,7 @@ struct ContentView: View {
 //                            CountdownRow(viewModel: viewModel, titleEvent: ev.title, dateEvent: ev.date)
                             CountdownRow(viewModel: viewModel, titleEvent: ev.title, dateEvent: ev.remaining)
                         }
-                        .onDelete(perform: viewModel.deleteEvents(index:))
+                        .onDelete(perform: viewModel.deleteEvents)
                     }
                     
                     .padding()

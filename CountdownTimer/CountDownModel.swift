@@ -11,6 +11,7 @@ struct TheEvents: Identifiable {
     var id: UUID = UUID()
     var title: String
     var date: Date
+//    var remaining: Date
 //    var remaining: DateComponents
 //    var remaining: TimesRemaining
     var remaining: String

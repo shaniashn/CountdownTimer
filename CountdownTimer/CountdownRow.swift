@@ -11,6 +11,7 @@ struct CountdownRow: View {
     @ObservedObject var viewModel: CountDownViewModel
     
     @State var titleEvent: String
+//    @State var dateEvent: Date
 //    @State var dateEvent: DateComponents
 //    @State var dateEvent: Int
     @State var dateEvent: String
@@ -21,7 +22,7 @@ struct CountdownRow: View {
                 Text(titleEvent)
                     .font(.system(size: 20, weight: .medium))
                     .fontWeight(.semibold)
-                
+//                Text(dateEvent, style: .offset)
                 Text("\(dateEvent)")
                     .foregroundColor(.secondary)
             }

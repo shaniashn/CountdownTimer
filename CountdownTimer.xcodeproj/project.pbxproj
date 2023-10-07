@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		003FA2B62AD0803F006097B0 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003FA2B52AD0803F006097B0 /* SwiftUIView.swift */; };
 		0063ABD22AC1CA41006B665A /* NewCountdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0063ABD12AC1CA41006B665A /* NewCountdownView.swift */; };
 		0063ABD42AC1F888006B665A /* CountDownModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0063ABD32AC1F888006B665A /* CountDownModel.swift */; };
 		0063ABD62AC1F948006B665A /* CountDownViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0063ABD52AC1F948006B665A /* CountDownViewModel.swift */; };
@@ -14,10 +15,12 @@
 		0077F1AE2AC00DEC00E85F69 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0077F1AD2AC00DEC00E85F69 /* ContentView.swift */; };
 		0077F1B02AC00DED00E85F69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0077F1AF2AC00DED00E85F69 /* Assets.xcassets */; };
 		0077F1B32AC00DED00E85F69 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0077F1B22AC00DED00E85F69 /* Preview Assets.xcassets */; };
+		00A8FC1B2AD10B0A00E07F24 /* CCountdownViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A8FC1A2AD10B0A00E07F24 /* CCountdownViewModel.swift */; };
 		00AE82C32AC578BA007DCA83 /* CountdownRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AE82C22AC578BA007DCA83 /* CountdownRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		003FA2B52AD0803F006097B0 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		0063ABD12AC1CA41006B665A /* NewCountdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCountdownView.swift; sourceTree = "<group>"; };
 		0063ABD32AC1F888006B665A /* CountDownModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownModel.swift; sourceTree = "<group>"; };
 		0063ABD52AC1F948006B665A /* CountDownViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownViewModel.swift; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 		0077F1AD2AC00DEC00E85F69 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0077F1AF2AC00DED00E85F69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0077F1B22AC00DED00E85F69 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		00A8FC1A2AD10B0A00E07F24 /* CCountdownViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCountdownViewModel.swift; sourceTree = "<group>"; };
 		00AE82C22AC578BA007DCA83 /* CountdownRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,6 +69,8 @@
 				0063ABD12AC1CA41006B665A /* NewCountdownView.swift */,
 				0063ABD32AC1F888006B665A /* CountDownModel.swift */,
 				0063ABD52AC1F948006B665A /* CountDownViewModel.swift */,
+				00A8FC1A2AD10B0A00E07F24 /* CCountdownViewModel.swift */,
+				003FA2B52AD0803F006097B0 /* SwiftUIView.swift */,
 				0077F1AF2AC00DED00E85F69 /* Assets.xcassets */,
 				0077F1B12AC00DED00E85F69 /* Preview Content */,
 			);
@@ -150,8 +156,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0063ABD22AC1CA41006B665A /* NewCountdownView.swift in Sources */,
+				003FA2B62AD0803F006097B0 /* SwiftUIView.swift in Sources */,
 				0063ABD42AC1F888006B665A /* CountDownModel.swift in Sources */,
 				0063ABD62AC1F948006B665A /* CountDownViewModel.swift in Sources */,
+				00A8FC1B2AD10B0A00E07F24 /* CCountdownViewModel.swift in Sources */,
 				0077F1AE2AC00DEC00E85F69 /* ContentView.swift in Sources */,
 				00AE82C32AC578BA007DCA83 /* CountdownRow.swift in Sources */,
 				0077F1AC2AC00DEC00E85F69 /* CountdownTimerApp.swift in Sources */,
