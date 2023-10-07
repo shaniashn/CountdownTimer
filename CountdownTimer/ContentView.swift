@@ -32,17 +32,18 @@ struct ContentView: View {
                 
                 Divider()
                 
-                ScrollView {
+//                ScrollView {
                     VStack(spacing: 15){
-                        ForEach(viewModel.event) { ev in
-//                            CountdownRow(viewModel: viewModel, titleEvent: ev.title, dateEvent: ev.date)
-                            CountdownRow(viewModel: viewModel, titleEvent: ev.title, dateEvent: ev.remaining)
-                        }
-                        .onDelete(perform: viewModel.deleteEvents)
+//                        List {
+                            ForEach(viewModel.event) { ev in
+                                CountdownRow(viewModel: viewModel, titleEvent: ev.title, dateEvent: ev.remaining)
+                            }
+                            .onDelete(perform: viewModel.deleteEvents)
+//                        }
                     }
                     
                     .padding()
-                }
+//                }
                 Spacer()
             }
             .navigationTitle("Active Countdown")

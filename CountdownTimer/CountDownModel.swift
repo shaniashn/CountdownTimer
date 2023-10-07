@@ -14,7 +14,8 @@ struct TheEvents: Identifiable {
 //    var remaining: Date
 //    var remaining: DateComponents
 //    var remaining: TimesRemaining
-    var remaining: String
+//    var remaining: String
+    var remaining: [Int]
 }
 
 struct TimesRemaining {

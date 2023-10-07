@@ -14,7 +14,7 @@ struct CountdownRow: View {
 //    @State var dateEvent: Date
 //    @State var dateEvent: DateComponents
 //    @State var dateEvent: Int
-    @State var dateEvent: String
+    @State var dateEvent: [Int]
     
     var body: some View {
         HStack {
@@ -23,8 +23,18 @@ struct CountdownRow: View {
                     .font(.system(size: 20, weight: .medium))
                     .fontWeight(.semibold)
 //                Text(dateEvent, style: .offset)
-                Text("\(dateEvent)")
-                    .foregroundColor(.secondary)
+                
+                HStack {
+                    ForEach(dateEvent, id: \.self) { components in
+                        Text("\(components)")
+                        /*
+                         jika komponennya 1 berarti hour
+                         jika komponennya 2 berarti hour day
+                         jika komponennya 3 berarti hour day month
+                         dst.
+                         */
+                    }
+                }
             }
             Spacer()
             Image(systemName: "chevron.forward")
