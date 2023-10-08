@@ -3,7 +3,7 @@
 //  CountdownTimer
 //
 //  Created by Sha Nia Siahaan on 28/09/23.
-//
+//  non native version
 
 import SwiftUI
 

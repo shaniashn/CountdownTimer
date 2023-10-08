@@ -17,6 +17,8 @@
 		0077F1B32AC00DED00E85F69 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0077F1B22AC00DED00E85F69 /* Preview Assets.xcassets */; };
 		00A8FC1B2AD10B0A00E07F24 /* CCountdownViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A8FC1A2AD10B0A00E07F24 /* CCountdownViewModel.swift */; };
 		00A8FC1D2AD129A700E07F24 /* ScreenDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A8FC1C2AD129A700E07F24 /* ScreenDetails.swift */; };
+		00A8FC212AD197A600E07F24 /* ContentViewNative.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A8FC202AD197A600E07F24 /* ContentViewNative.swift */; };
+		00A8FC232AD2078700E07F24 /* CountDownRowNative.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A8FC222AD2078700E07F24 /* CountDownRowNative.swift */; };
 		00AE82C32AC578BA007DCA83 /* CountdownRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AE82C22AC578BA007DCA83 /* CountdownRow.swift */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +34,8 @@
 		0077F1B22AC00DED00E85F69 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		00A8FC1A2AD10B0A00E07F24 /* CCountdownViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCountdownViewModel.swift; sourceTree = "<group>"; };
 		00A8FC1C2AD129A700E07F24 /* ScreenDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenDetails.swift; sourceTree = "<group>"; };
+		00A8FC202AD197A600E07F24 /* ContentViewNative.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewNative.swift; sourceTree = "<group>"; };
+		00A8FC222AD2078700E07F24 /* CountDownRowNative.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownRowNative.swift; sourceTree = "<group>"; };
 		00AE82C22AC578BA007DCA83 /* CountdownRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -68,7 +72,9 @@
 				0077F1AB2AC00DEC00E85F69 /* CountdownTimerApp.swift */,
 				00A8FC1C2AD129A700E07F24 /* ScreenDetails.swift */,
 				0077F1AD2AC00DEC00E85F69 /* ContentView.swift */,
+				00A8FC202AD197A600E07F24 /* ContentViewNative.swift */,
 				00AE82C22AC578BA007DCA83 /* CountdownRow.swift */,
+				00A8FC222AD2078700E07F24 /* CountDownRowNative.swift */,
 				0063ABD12AC1CA41006B665A /* NewCountdownView.swift */,
 				0063ABD32AC1F888006B665A /* CountDownModel.swift */,
 				0063ABD52AC1F948006B665A /* CountDownViewModel.swift */,
@@ -164,8 +170,10 @@
 				0063ABD42AC1F888006B665A /* CountDownModel.swift in Sources */,
 				0063ABD62AC1F948006B665A /* CountDownViewModel.swift in Sources */,
 				00A8FC1B2AD10B0A00E07F24 /* CCountdownViewModel.swift in Sources */,
+				00A8FC212AD197A600E07F24 /* ContentViewNative.swift in Sources */,
 				0077F1AE2AC00DEC00E85F69 /* ContentView.swift in Sources */,
 				00AE82C32AC578BA007DCA83 /* CountdownRow.swift in Sources */,
+				00A8FC232AD2078700E07F24 /* CountDownRowNative.swift in Sources */,
 				0077F1AC2AC00DEC00E85F69 /* CountdownTimerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
