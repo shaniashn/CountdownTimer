@@ -35,7 +35,7 @@ struct ContentViewNative: View {
                 
 //                    Divider()
                     ForEach(viewModel.event) { ev in
-                        CountDownRowNative(viewModel: viewModel, titleEvent: ev.title, dateEvent: ev.remaining!)
+                        
                     }
                     .onDelete(perform: viewModel.deleteEvents)
                 }
