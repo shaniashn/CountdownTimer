@@ -11,11 +11,11 @@ struct Event: Identifiable {
 //    var id: UUID = UUID()
     var id: Int
     var title: String
-    var date: Date
+    var date: Date = Date()
     var remaining: [Int]?
     var timeLeft: String
     
-    init(id: Int, title: String, date: Date, remaining: [Int], timeLeft: String = "") {
+    init(id: Int, title: String, date: Date, remaining: [Int], timeLeft: String = "Finish!") {
         self.id = id
         self.title = title
         self.date = date
