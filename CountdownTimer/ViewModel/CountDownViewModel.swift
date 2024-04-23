@@ -35,27 +35,21 @@ class CountDownViewModel: ObservableObject {
         var remaining: [Int] = [year, month, day, hour]
         
         func notZeroChecker(remain: [Int]) -> [Int]{
-            print(remaining)
             for _ in 0..<remaining.count {
                 if remaining[0] == 0 {
                     remaining.remove(at: 0)
-                    print("remaining ", remaining)
                 }
             }
-            
             return remaining
         }
         
         let timeCount = notZeroChecker(remain: remaining)
-        print("timeCount ", timeCount)
         
         let texts = ["\(hour) hour ", "\(day) day ", "\(month) month ", "\(year) year "]
         
-        
         var textRemaining: String = ""
         
-        for i in 0..<timeCount.count {
-            print("timeCount count ", timeCount.count)
+        for i in (0..<remaining.count).reversed() {
             textRemaining += texts[i]
         }
         
