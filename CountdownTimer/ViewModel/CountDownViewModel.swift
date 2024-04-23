@@ -18,26 +18,50 @@ class CountDownViewModel: ObservableObject {
     @Published var timesRemain: [TimesRemaining] = []
     
     func addEvent(title: String, date: Date){
-        print(date.description(with: .autoupdatingCurrent))
-        let newEvent = Event(id: 5, title: title, date: date, remaining: [20])
+        print(date)
+        let timeLeft = remainingTime(date: date) == "" ? "Finish!" : remainingTime(date: date)
+        let newEvent = Event(id: 5, title: title, date: date, remaining: [20], timeLeft: timeLeft)
         event.append(newEvent)
     }
     
-//    func changeFormat(date: Date) -> String {
-//        var format: DateFormatter {
-//            var formatter = DateFormatter()
-//            formatter.timeZone = .none
-//            formatter.dateStyle = .medium
-//            formatter.timeStyle = .short
-//            return formatter
-//        }
-//        
-//        var changedDate = format.string(from: date)
-////        var changeFormat = format.date(from: localDate)
-////        print(changedDate)
-//        
-//        return changedDate
-//    }
+    func remainingTime(date: Date) -> String {
+        let dateRemaining = Calendar.current.dateComponents([.day,.month,.year,.hour], from: Date(), to: date)
+        
+        let year = dateRemaining.year ?? 0
+        let month = dateRemaining.month ?? 0
+        let day = dateRemaining.day ?? 0
+        let hour = dateRemaining.hour ?? 0
+        
+        var remaining: [Int] = [year, month, day, hour]
+        
+        func notZeroChecker(remain: [Int]) -> [Int]{
+            print(remaining)
+            for _ in 0..<remaining.count {
+                if remaining[0] == 0 {
+                    remaining.remove(at: 0)
+                    print("remaining ", remaining)
+                }
+            }
+            
+            return remaining
+        }
+        
+        let timeCount = notZeroChecker(remain: remaining)
+        print("timeCount ", timeCount)
+        
+        let texts = ["\(hour) hour ", "\(day) day ", "\(month) month ", "\(year) year "]
+        
+        
+        var textRemaining: String = ""
+        
+        for i in 0..<timeCount.count {
+            print("timeCount count ", timeCount.count)
+            textRemaining += texts[i]
+        }
+        
+        print(textRemaining)
+        return textRemaining
+    }
     
     func addEventss(title: String, date: Date) { //tujuannya adalah memasukkan 1 TheEvents (object) -> [TheEvents(), TheEvents()]
 //        let remainings = getDate(date: date) //remainings akan menerima getDate dalam bentuk komponen date
