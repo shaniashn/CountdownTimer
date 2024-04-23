@@ -14,6 +14,7 @@ struct CountdownTimerApp: App {
         WindowGroup {
             ContentView()
                 .environmentObject(vm)
+                .fontDesign(.rounded)
         }
     }
 }
