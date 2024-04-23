@@ -8,17 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
-    @FocusState var focusedText: Bool
     @EnvironmentObject var vm: CountDownViewModel
     
-    @StateObject var viewModel = CountDownViewModel()
     
     var body: some View {
         NavigationStack {
             VStack {
                 VStack {
                     NavigationLink {
-//                        NewCountdownView(viewModel: viewModel, focusedText: _focusedText)
                         NewCountdownView()
                     } label: {
                         Text("+ Add new Event")
@@ -35,7 +32,6 @@ struct ContentView: View {
                 Divider()
                         List {
                             ForEach(vm.event) { event in
-//                                CountdownRow(titleEvent: ev.title, dateEvent: ev.remaining!)
                                 CountdownRow(event: event)
                             }
 //                            .onDelete(perform: viewModel.deleteEvents)
