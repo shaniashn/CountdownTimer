@@ -34,12 +34,18 @@ struct ContentView: View {
                             ForEach(vm.event) { event in
                                 CountdownRow(event: event)
                             }
-//                            .onDelete(perform: viewModel.deleteEvents)
+                            .onDelete(perform: vm.deleteEvents)
+                            .onMove(perform: vm.moveEvents)
                         }
                         .listStyle(.inset)
                 Spacer()
             }
             .navigationTitle("Active Countdown")
+            .toolbar(content: {
+                ToolbarItem(placement: .topBarLeading) {
+                    EditButton()
+                }
+            })
         }
     }
 }

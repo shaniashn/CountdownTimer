@@ -78,7 +78,11 @@ class CountDownViewModel: ObservableObject {
     }
     
     func deleteEvents(index: IndexSet) {
-        eventqq.remove(atOffsets: index)
+        event.remove(atOffsets: index)
+    }
+    
+    func moveEvents(indexSet: IndexSet, index: Int ) {
+        event.move(fromOffsets: indexSet, toOffset: index)
     }
     
     func getDate(date: Date) -> String {
